@@ -25,7 +25,7 @@ export default function Navbar() {
 		<>
 			<motion.nav
 				variants={navVariants}
-				className="w-full h-[8vh] padding-x fixed top-0 left-0 z-50 backdrop-blur-[7px] flex items-center justify-between sm:hidden xm:hidden md:hidden"
+				className="w-full mt-4 h-[8vh] padding-x fixed top-0 left-0 z-50 backdrop-blur-[7px] flex items-center justify-between sm:hidden xm:hidden md:hidden"
 				animate={hidden ? "hidden" : "vissible"}>
 				<div className="w-[50%]">
 					<Link href={"/"}>
@@ -42,7 +42,7 @@ export default function Navbar() {
 						<Link
 							key={item.id}
 							className={`w-fit paragraph font-medium font-NeueMontreal text-secondry capitalize flex flex-col hover ${
-								item.id === 5 && "ml-auto"
+								item.id === 1 && "ml-auto"
 							}`}
 							href={item.href}>
 							<TextHover

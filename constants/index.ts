@@ -4,26 +4,6 @@ import { capaybilities1, capaybilities2, capaybilities3, capaybilities4, client0
 export const navbarItems = [
    {
       id: 1,
-      title: "Services",
-      href: "/services",
-   },
-   {
-      id: 2,
-      title: "Our work",
-      href: "/presentation",
-   },
-   {
-      id: 3,
-      title: "About us",
-      href: "/ochi-team",
-   },
-   {
-      id: 4,
-      title: "Insights",
-      href: "/insights",
-   },
-   {
-      id: 5,
       title: "Contact us",
       href: "/contact",
    },
@@ -39,16 +19,11 @@ export const footerItems = [
    },
    {
       id: 2,
-      title: "Behance",
-      href: "https://www.behance.com/",
+      title: "X (Twitter)",
+      href: "https://www.twitter.com/",
    },
    {
       id: 3,
-      title: "Facebook",
-      href: "https://www.facebook.com/",
-   },
-   {
-      id: 4,
       title: "Linkedin",
       href: "https://www.linkedin.com/",
    },

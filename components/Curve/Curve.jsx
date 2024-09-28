@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { text, curve, translate } from "@/motion";
+import Image from "next/image";
 
 const routes = {
-	"/": "Home",
+	"/": "THE RUN CLUB",
 	"/services": "Services",
 	"/presentation": "Our Work",
 	"/ochi-team": "About Us",
@@ -45,17 +46,24 @@ export default function Curve({ children, backgroundColor }) {
 	}, []);
 
 	return (
-		<div style={{ backgroundColor }}>
+		<div style={{ 
+			background:"url('/images/Component.png')",
+			
+		 }}>
 			<div
-				style={{ opacity: dimensions.width == null ? 1 : 0 }}
+				style={{ opacity: dimensions.width == null ? 1 : 0,
+
+				 }}
 				className="fixed h w-full pointer-events-none
-				 left-0 top-0 z-50 bg-black"
+				 left-0 top-0 z-50"
+
 			/>
 			<motion.p
 				className="absolute left-1/2 top-[40%] text-white text-[50px] z-[60] -translate-x-1/2 text-center"
 				{...anim(text)}>
-				{routes[router.route]}
+				<Image src="/turtle.png" width={100} height={100} />
 			</motion.p>
+		
 			{dimensions.width != null && <SVG {...dimensions} />}
 			{children}
 		</div>

@@ -14,7 +14,7 @@ const config: Config = {
         background: "#f1f1f1",
         secondry: "#212121",
         marquee: "#004d43",
-        about: "#cdea68"
+        about: "#D8FD53"
       },
     },
     fontFamily: {

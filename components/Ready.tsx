@@ -8,7 +8,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 
 export default function Ready() {
 	const container = useRef(null);
-	const phrase = ["Ready", "to start", "the project"];
+	const phrase = ["Ready", "to RUN", "the World?"];
 
 	const { scrollYProgress } = useScroll({
 		target: container,
@@ -18,7 +18,7 @@ export default function Ready() {
 
 	return (
 		<section
-			className="w-full relative z-30 min-h-screen sm:h-screen xm:h-screen bg-about padding-y rounded-t-[20px] mt-[-20px]"
+			className="w-full relative z-30 min-h-screen sm:h-screen xm:h-screen bg-about padding-y mt-[-20px]"
 			ref={container}>
 			<div className="w-full h-full flex justify-center gap-[50px] items-center flex-col">
 				<div className="flex flex-col gap-[10px]">
@@ -30,7 +30,7 @@ export default function Ready() {
 					<div className="flex items-center justify-between bg-secondry cursor-pointer rounded-full group">
 						<RoundButton
 							href="/contact"
-							title="start the project"
+							title="Join WhatsApp Community"
 							className="bg-white text-black"
 							bgcolor="#000"
 							style={{ color: "#fff" }}
@@ -45,7 +45,7 @@ export default function Ready() {
 								className="py-[6px]"
 								backgroundColor="#212121">
 								<p className="z-10 px-[10px] ml-[15px] py-[6px] group-hover:text-white text-black">
-									hello@ochi.design
+									hello@fufuturtles.com
 								</p>
 								<div className="bg-black group-hover:bg-white text-black p-[10px] rounded-full scale-[0.3] mr-[10px] group-hover:scale-[0.9] transition-all z-10 transform duration-[0.3s] ease-[.215,.61,.355,1]">
 									<ArrowUpRight
